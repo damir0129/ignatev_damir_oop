@@ -15,7 +15,6 @@
 Проверь, что произойдёт при попытке снова вывести объект.name.
 
 """
-from idlelib.autocomplete import TRY_A
 
 """
 3. Создай класс User с атрибутами класса role = "guest" и active = True.
