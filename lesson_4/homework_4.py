@@ -250,7 +250,7 @@ class UserData:
 
     @age.setter
     def age(self, value):
-        if not isinstance(value, int) and not value >= 18:
+        if not isinstance(value, int) or not value >= 18:
             raise ValueError("Должно быть целым числом и больше или равно 18")
         self.__age = value
 
@@ -271,5 +271,8 @@ class UserData:
             "is_active": self.is_active
         }
 
-u = UserData("email@email.ru", 15, True)
+u = UserData("email@email.ru", 52, True)
+
+u.age = 15
+
 assert u
